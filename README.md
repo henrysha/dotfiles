@@ -70,6 +70,7 @@ cp vim/my_configs.vim ~/.vim_runtime/
 Install YouCompleteMe to vim_runtime
 ```zsh
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
+~/.vim_runtime/my_plugins/YouCompleteMe/install.py
 ```
 Add the contents of custom zshrc file to `~/.zshrc`
 ```zsh
