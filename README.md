@@ -2,7 +2,7 @@
 
 * [Dependencies](#dependencies)
 * [Installation](#installation)
-    * [Using install.sh](#Using install.sh)
+    * [Using Scripts](#using-scripts)
     * [Manual](#manual)
 ---
 ## Dependencies
@@ -19,7 +19,7 @@
 Go to Terminal / iTerm setting and select Nerd Font as default font or non-ascii font after installation.
 This is necessary for the powerlevel10k theme.
 
-### Using install.sh
+### Using Scripts
 Using the script to install setup will be convenient, but removes previous settings.
 
 Back up files if necessary.
