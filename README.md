@@ -12,6 +12,7 @@
 * [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 * [Powerline fonts](https://github.com/powerline/fonts)
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * fzf 0.18.0
 
 ## Installation
@@ -65,6 +66,10 @@ Copy the `my_configs.vim` to the `.vim_runtime` folder
 * *CAUTION* : this will overwrite your current `my_configs.vim` file if you already have one. 
 ```zsh
 cp vim/my_configs.vim ~/.vim_runtime/
+```
+Install YouCompleteMe to vim_runtime
+```zsh
+git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
 ```
 Add the contents of custom zshrc file to `~/.zshrc`
 ```zsh
