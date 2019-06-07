@@ -14,6 +14,9 @@
 
 ## Installation
 ### Using `install.sh`
+Using the script to install setup will be convenient, but removes previous settings.
+
+Back up files if necessary.
 ```zsh
 git clone https://github.com/swha0901/dotfiles.git dotfiles
 sh dotfiles/install.sh
