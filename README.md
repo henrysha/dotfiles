@@ -13,6 +13,10 @@
 * fzf 0.18.0
 
 ## Installation
+### Font Setup
+Go to Terminal / iTerm setting and select Nerd Font as default font or non-ascii font after installation.
+This is necessary for the powerlevel10k theme.
+
 ### Using `install.sh`
 Using the script to install setup will be convenient, but removes previous settings.
 
