@@ -1,0 +1,51 @@
+if [ ! -d ~/.oh-my-zsh ]; then
+    echo "Removing Existing Oh-my-zsh installation."
+    rm -rf ~/.oh-my-zsh
+fi
+echo "Installing Oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+if [ ! -d ~/.vim_runtime ]; then
+    echo "Removing Existing Ultimate Vimrc"
+    rm -rf ~/.vim_runtime
+fi
+echo "Installing The Ultimate Vimrc"
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+echo "Installing PowerLevel10k Zsh theme"
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
+echo "Installing Powerline Fonts"
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
+brew tap homebrew/cask-fonts
+brew cask install font-meslo-nerd-font
+brew cask install font-ibm-plex
+
+echo "Installing fzf"
+brew install fzf
+
+echo "Installing additional configuration for vimrc"
+cp vim/my_configs.vim ~/.vim_runtime
+
+echo "Installing custom zsh theme"
+cat zsh/theme.sh >> ~/.zshrc
+sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
+
+echo "Enabling oh-my-zsh plugins"
+sed -i '' '66i\
+export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
+sed -i '' 's/plugins=(git)/plugins=(git rbenv node vscode bundler fzf battery thefuck zsh_reload)/' ~/.zshrc
+
+echo "============================"
+echo "===== INSTALL COMPLETE ====="
+echo "============================"
