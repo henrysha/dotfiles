@@ -35,10 +35,10 @@ echo "Installing fzf"
 brew install fzf
 
 echo "Installing additional configuration for vimrc"
-cp vim/my_configs.vim ~/.vim_runtime
-
+echo "source ~/dotfiles/vim/my_configs.vim" > ~/.vim_runtime/my_configs.vim
 echo "Installing custom zsh theme"
-cat zsh/theme.sh >> ~/.zshrc
+echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
+# cat zsh/theme.sh >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 
 echo "Enabling oh-my-zsh plugins"
