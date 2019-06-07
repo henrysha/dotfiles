@@ -5,6 +5,7 @@
     * [Manual](#manual)
 ---
 ## Dependencies
+* zsh
 * [The Ultimate vimrc](https://github.com/amix/vimrc)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [powerlevel10k](https://github.com/romkatv/powerlevel10k)
