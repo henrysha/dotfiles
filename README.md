@@ -2,6 +2,7 @@
 
 * [Dependencies](#dependencies)
 * [Installation](#installation)
+    * [Using `install.sh`](#Using `install.sh`)
     * [Manual](#manual)
 ---
 ## Dependencies
