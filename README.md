@@ -15,7 +15,8 @@
 ## Installation
 ### Using `install.sh`
 ```zsh
-git clone https://github.com/swha0901/dotfiles.git
+git clone https://github.com/swha0901/dotfiles.git dotfiles
+sh dotfiles/install.sh
 ```
 ### Manual
 Install oh-my-zsh
