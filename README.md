@@ -67,6 +67,10 @@ cp vim/my_configs.vim ~/.vim_runtime/
 Add the contents of custom zshrc file to `~/.zshrc`
 ```zsh
 cat zsh/theme.sh >> ~/.zshrc
+sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
+sed -i '' '66i\
+export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
+sed -i '' 's/plugins=(git)/plugins=(git rbenv node vscode bundler fzf battery thefuck zsh_reload)/' ~/.zshrc
 ```
 Install fzf
 ```zsh
