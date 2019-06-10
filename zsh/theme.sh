@@ -64,3 +64,7 @@ POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_STATUS_CROSS=true
 
 export PATH=$/usr/local/opt/bin/postgresql@9.6/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/code/lendinghome-monolith/bin:$HOME/code/lendinghome-monolith/toolbelt:$HOME/code/lendinghome-monolith/toolbelt/bin:$PATH
+
+alias look="sudo find . -name"
+alias cls="clear"
+alias search="sudo grep --color -rnw ./ -e "
