@@ -1,4 +1,5 @@
 # Custom Dot Files for my settings
+Optimized for MAC
 
 * [Dependencies](#dependencies)
 * [Installation](#installation)
