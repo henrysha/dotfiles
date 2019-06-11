@@ -41,7 +41,6 @@ git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugin
 
 echo "Installing custom zsh theme"
 echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
-# cat zsh/theme.sh >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 
 echo "Enabling oh-my-zsh plugins"
