@@ -1,7 +1,9 @@
 # Custom Dot Files for my settings
+Optimized for MAC
 
 * [Dependencies](#dependencies)
 * [Installation](#installation)
+    * [Using Scripts](#using-scripts)
     * [Manual](#manual)
 ---
 ## Dependencies
@@ -11,6 +13,7 @@
 * [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 * [Powerline fonts](https://github.com/powerline/fonts)
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
+* [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * fzf 0.18.0
 * nvm
 
@@ -19,15 +22,19 @@
 Go to Terminal / iTerm setting and select Nerd Font as default font or non-ascii font after installation.
 This is necessary for the powerlevel10k theme.
 
-### Using `install.sh`
+### Using Scripts
 Using the script to install setup will be convenient, but removes previous settings.
 
 Back up files if necessary.
 ```zsh
-git clone https://github.com/swha0901/dotfiles.git dotfiles
-sh dotfiles/install.sh
+git clone https://github.com/swha0901/dotfiles.git ~/dotfiles
+sh ~/dotfiles/install.sh
 ```
 ### Manual
+Clone current repo into `~/dotfiles`
+```zsh
+git clone https://github.com/swha0901 dotfiles.git ~/dotfiles
+```
 Install oh-my-zsh
 ```zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -61,14 +68,18 @@ Install The Ultimate Vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
-Copy the `my_configs.vim` to the `.vim_runtime` folder
-* *CAUTION* : this will overwrite your current `my_configs.vim` file if you already have one. 
+Add support for my_configs file for vim
 ```zsh
-cp vim/my_configs.vim ~/.vim_runtime/
+echo "source ~/dotfiles/vim/my_configs.vim" >> ~/.vim_runtime/my_configs.vim
+```
+Install YouCompleteMe to vim_runtime
+```zsh
+git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
+~/.vim_runtime/my_plugins/YouCompleteMe/install.py
 ```
 Add the contents of custom zshrc file to `~/.zshrc`
 ```zsh
-cat zsh/theme.sh >> ~/.zshrc
+echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 sed -i '' '66i\
 export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc

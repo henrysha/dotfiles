@@ -1,3 +1,5 @@
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 POWERLEVEL9K_MODE="nerdfont-fontconfig"
 
 POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
@@ -38,12 +40,12 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context battery dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time dir_writable ip custom_wifi_signal ram load background_jobs)
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 
-POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M \uf073 %d/%m/%y}"
+POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M \uf073 %m/%d/%y}"
 POWERLEVEL9K_TIME_BACKGROUND='white'
 POWERLEVEL9K_RAM_BACKGROUND='yellow'
 POWERLEVEL9K_LOAD_CRITICAL_BACKGROUND="white"
@@ -66,3 +68,7 @@ export PATH=$/usr/local/opt/bin/postgresql@9.6/bin:$HOME/.rbenv/bin:$HOME/.rbenv
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+alias look="sudo find . -name"
+alias cls="clear"
+alias search="sudo grep --color -rnw ./ -e "
