@@ -6,3 +6,6 @@ map <leader>C :CtrlPClearCache<cr>
 
 map ∆ <M-j>
 map ˚ <M-k>
+
+map <leader>st :vertical :term
+map <leader>t :term
