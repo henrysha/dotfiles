@@ -48,6 +48,13 @@ sed -i '' '66i\
 export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
 sed -i '' 's/plugins=(git)/plugins=(git rbenv node vscode bundler fzf battery thefuck zsh_reload)/' ~/.zshrc
 
+echo "Installing nvm"
+if [ -d ~/.nvm ]; then
+    echo "Creating ~/.nvm directory"
+    mkdir ~/.nvm
+fi
+brew install nvm
+
 echo "============================"
 echo "===== INSTALL COMPLETE ====="
 echo "============================"

@@ -15,6 +15,7 @@ Optimized for MAC
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * fzf 0.18.0
+* nvm
 
 ## Installation
 ### Font Setup
@@ -87,4 +88,9 @@ sed -i '' 's/plugins=(git)/plugins=(git rbenv node vscode bundler fzf battery th
 Install fzf
 ```zsh
 brew install fzf
+```
+Install nvm
+```zsh
+mkdir ~/.nvm
+brew install nvm
 ```
