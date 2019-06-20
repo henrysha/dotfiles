@@ -1,0 +1,6 @@
+[submodule "iterm/Monokai-Soda-iTerm"]
+	path = iterm/Monokai-Soda-iTerm
+	url = https://github.com/deepsweet/Monokai-Soda-iTerm.git
+[submodule "iterm/material-iterm"]
+	path = iterm/material-iterm
+	url = https://github.com/stoeffel/material-iterm.git

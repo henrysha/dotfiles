@@ -46,7 +46,7 @@ sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 echo "Enabling oh-my-zsh plugins"
 sed -i '' '66i\
 export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
-sed -i '' 's/plugins=(git)/plugins=(git rbenv node vscode bundler fzf battery thefuck zsh_reload)/' ~/.zshrc
+sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh_reload)/' ~/.zshrc
 
 echo "Installing nvm"
 if [ -d ~/.nvm ]; then

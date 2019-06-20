@@ -39,6 +39,8 @@ POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{014}\u2570%F{cyan}\uF460%F{073}\uF
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_ICON='?'
+POWERLEVEL9K_DISABLE_RPROMPT=true
+
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time dir_writable ip custom_wifi_signal ram load background_jobs)
@@ -72,3 +74,5 @@ export NVM_DIR="$HOME/.nvm"
 alias look="sudo find . -name"
 alias cls="clear"
 alias search="sudo grep --color -rnw ./ -e "
+
+eval $(thefuck --alias)

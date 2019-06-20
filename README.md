@@ -27,13 +27,14 @@ Using the script to install setup will be convenient, but removes previous setti
 
 Back up files if necessary.
 ```zsh
-git clone https://github.com/swha0901/dotfiles.git ~/dotfiles
+git clone --recursive https://github.com/swha0901/dotfiles.git ~/dotfiles
 sh ~/dotfiles/install.sh
 ```
 ### Manual
 Clone current repo into `~/dotfiles`
+Recursive option is used to clone the iTerm color schemes submodules. 
 ```zsh
-git clone https://github.com/swha0901 dotfiles.git ~/dotfiles
+git clone --recursive https://github.com/swha0901/dotfiles.git ~/dotfiles
 ```
 Install oh-my-zsh
 ```zsh
