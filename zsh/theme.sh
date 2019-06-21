@@ -65,7 +65,7 @@ POWERLEVEL9K_FOLDER_ICON=''
 POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_STATUS_CROSS=true
 
-export PATH=$/usr/local/opt/bin/postgresql@9.6/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/code/lendinghome-monolith/bin:$HOME/code/lendinghome-monolith/toolbelt:$HOME/code/lendinghome-monolith/toolbelt/bin:$PATH
+export PATH=/usr/local/opt/postgresql@9.6/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/code/lendinghome-monolith/bin:$HOME/code/lendinghome-monolith/toolbelt:$HOME/code/lendinghome-monolith/toolbelt/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
