@@ -9,3 +9,19 @@ map ˚ <M-k>
 
 map <leader>st :vertical :term<cr>
 map <leader>t :term<cr>
+
+" relative path (src/foo.txt)
+nnoremap <leader>cf :let @+=expand("%")<CR>
+
+" absolute path (/something/src/foo.txt)
+nnoremap <leader>cF :let @+=expand("%:p")<CR>
+
+" filename (foo.txt)
+nnoremap <leader>ct :let @+=expand("%:t")<CR>
+
+" directory name (/something/src)
+nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
+
+autocmd FileType javascript set formatprg=prettier\ --stdin
+autocmd BufWritePre *.js :normal gggqG
+

@@ -55,6 +55,12 @@ if [ -d ~/.nvm ]; then
 fi
 brew install nvm
 
+echo "Installing yarn"
+brew install yarn
+
+echo "Installing Prettier"
+yarn global add prettier
+
 echo "============================"
 echo "===== INSTALL COMPLETE ====="
 echo "============================"

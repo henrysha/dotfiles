@@ -14,6 +14,7 @@ Optimized for MAC
 * [Powerline fonts](https://github.com/powerline/fonts)
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+* [Prettier](https://prettier.io)
 * fzf 0.18.0
 * nvm
 
@@ -94,4 +95,14 @@ Install nvm
 ```zsh
 mkdir ~/.nvm
 brew install nvm
+```
+
+Install yarn
+```zsh
+brew install yarn
+```
+
+Install prettier
+```zsh
+yarn global add prettier
 ```
