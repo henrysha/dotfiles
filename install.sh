@@ -36,7 +36,7 @@ brew install fzf
 
 echo "Installing additional configuration for vimrc"
 echo "source ~/dotfiles/vim/my_configs.vim" > ~/.vim_runtime/my_configs.vim
-git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
+git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
 ~/.vim_runtime/my_plugins/YouCompleteMe/install.py --all
 
 echo "Installing custom zsh theme"
