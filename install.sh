@@ -1,11 +1,11 @@
-if [ ! -d ~/.oh-my-zsh ]; then
-    echo "Removing Existing Oh-my-zsh installation."
-    rm -rf ~/.oh-my-zsh
-fi
-echo "Installing Oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# if [ -d ~/.oh-my-zsh ]; then
+#     echo "Removing Existing Oh-my-zsh installation."
+#     rm -rf ~/.oh-my-zsh
+# fi
+# echo "Installing Oh-my-zsh"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-if [ ! -d ~/.vim_runtime ]; then
+if [ -d ~/.vim_runtime ]; then
     echo "Removing Existing Ultimate Vimrc"
     rm -rf ~/.vim_runtime
 fi
@@ -44,7 +44,7 @@ echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 
 echo "Enabling oh-my-zsh plugins"
-sed -i '' '66i\
+sed -i '' '65i\
 export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
 sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh_reload)/' ~/.zshrc
 

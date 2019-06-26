@@ -4,3 +4,6 @@
 [submodule "iterm/material-iterm"]
 	path = iterm/material-iterm
 	url = https://github.com/stoeffel/material-iterm.git
+[submodule "iterm/iterm2-material-design"]
+	path = iterm/iterm2-material-design
+	url = https://github.com/MartinSeeler/iterm2-material-design.git
