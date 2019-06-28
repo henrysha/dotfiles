@@ -42,6 +42,10 @@ echo "source ~/dotfiles/vim/my_configs.vim" > ~/.vim_runtime/my_configs.vim
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
 ~/.vim_runtime/my_plugins/YouCompleteMe/install.py --all
 
+echo "Installing ack"
+brew install ack
+git clone https://github.com/mileszs/ack.vim.git ~/.vim_runtime/my_plugins/ack.vim
+
 echo "Installing custom zsh theme"
 echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc

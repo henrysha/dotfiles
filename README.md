@@ -16,6 +16,7 @@ Optimized for MAC
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * [Prettier](https://prettier.io)
 * [fd](https://github.com/sharkdp/fd)
+* [ack.vim](https://github.com/mileszs/ack.vim)
 * fzf 0.18.0
 * nvm
 
@@ -79,6 +80,12 @@ Install YouCompleteMe to vim_runtime
 ```zsh
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe
 ~/.vim_runtime/my_plugins/YouCompleteMe/install.py
+```
+
+Install ack.vim
+```zsh
+brew install ack
+git clone https://github.com/mileszs/ack.vim.git ~/.vim_runtime/my_plugins/ack.vim
 ```
 Add the contents of custom zshrc file to `~/.zshrc`
 ```zsh
