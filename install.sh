@@ -34,6 +34,9 @@ brew cask install font-ibm-plex
 echo "Installing fzf"
 brew install fzf
 
+echo "Installing fd"
+brew install fd
+
 echo "Installing additional configuration for vimrc"
 echo "source ~/dotfiles/vim/my_configs.vim" > ~/.vim_runtime/my_configs.vim
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim_runtime/my_plugins/YouCompleteMe

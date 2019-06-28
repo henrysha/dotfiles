@@ -15,6 +15,7 @@ Optimized for MAC
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * [Prettier](https://prettier.io)
+* [fd](https://github.com/sharkdp/fd)
 * fzf 0.18.0
 * nvm
 
@@ -91,6 +92,12 @@ Install fzf
 ```zsh
 brew install fzf
 ```
+
+Install fd
+```zsh
+brew install fd
+```
+
 Install nvm
 ```zsh
 mkdir ~/.nvm
