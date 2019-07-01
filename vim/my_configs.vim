@@ -22,6 +22,5 @@ nnoremap <leader>ct :let @+=expand("%:t")<CR>
 " directory name (/something/src)
 nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
 
-autocmd FileType javascript set formatprg=prettier\ --stdin
-autocmd BufWritePre *.js :normal gggqG
-
+au FileType javascript set shiftwidth=2
+au FileType javascript set tabstop=2
