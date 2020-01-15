@@ -1,9 +1,9 @@
-# if [ -d ~/.oh-my-zsh ]; then
-#     echo "Removing Existing Oh-my-zsh installation."
-#     rm -rf ~/.oh-my-zsh
-# fi
-# echo "Installing Oh-my-zsh"
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if [ -d ~/.oh-my-zsh ]; then
+    echo "Removing Existing Oh-my-zsh installation."
+    rm -rf ~/.oh-my-zsh
+fi
+echo "Installing Oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 if [ -d ~/.vim_runtime ]; then
     echo "Removing Existing Ultimate Vimrc"
@@ -18,13 +18,13 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 echo "Installing Powerline Fonts"
 # clone
-git clone https://github.com/powerline/fonts.git --depth=1
+git clone https://github.com/powerline/fonts.git --depth=1 powerlinefonts
 # install
 cd fonts
 ./install.sh
 # clean-up a bit
 cd ..
-rm -rf fonts
+rm -rf powerlinefonts
 
 echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
 brew tap homebrew/cask-fonts
