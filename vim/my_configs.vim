@@ -1,5 +1,4 @@
 set number
-set nofoldenable
 
 map <leader>e :tabedit ~/dotfiles/vim/my_configs.vim<cr>
 map <leader>C :CtrlPClearCache<cr>
@@ -24,3 +23,8 @@ nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
 
 au FileType javascript set shiftwidth=2
 au FileType javascript set tabstop=2
+au FileType json set shiftwidth=2
+au FileType json set tabstop=2
+
+set foldlevelstart=20
+set foldmethod=indent

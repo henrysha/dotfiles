@@ -81,3 +81,5 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 alias yarn-ops="cd ~/code/lendinghome-monolith/ops && yarn build:watch || osascript -e 'display notification \"Gosh Yarn-it, I crashed\" with title \"💩 💩 \"'"
+alias rspec="bundle exec rspec"
+alias cucumber="bundle exec cucumber"
