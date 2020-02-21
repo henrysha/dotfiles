@@ -96,3 +96,6 @@ export RUBY_CONFIGURE_OPTS="--disable-dtrace --with-openssl-dir=`brew --prefix o
 
 export BUILDKITE_TOKEN=15c404b9c0a718b574a61f943c0314571c53d34e
 export BUILDKITE_API_TOKEN=$BUILDKITE_TOKEN
+
+alias gclm="git branch -d $(git branch --merged=master | grep -v master)"
+alias glcd="git branch -d $(git branch --merged=develop | grep -v develop)"
