@@ -80,7 +80,6 @@ eval $(thefuck --alias)
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-alias yarn-ops="cd ~/code/lendinghome-monolith/ops && yarn build:watch || osascript -e 'display notification \"Gosh Yarn-it, I crashed\" with title \"💩 💩 \"'"
 alias rspec="bundle exec rspec"
 alias cucumber="bundle exec cucumber"
 
@@ -94,8 +93,6 @@ LC_ALL=en_US.UTF-8
 
 export RUBY_CONFIGURE_OPTS="--disable-dtrace --with-openssl-dir=`brew --prefix openssl` --with-readline-dir=`brew --prefix readline` --with-libyaml-dir=`brew --prefix libyaml` --with-zlib-dir=`brew --prefix zlib`"
 
-export BUILDKITE_TOKEN=15c404b9c0a718b574a61f943c0314571c53d34e
-export BUILDKITE_API_TOKEN=$BUILDKITE_TOKEN
 
 alias gclm="git branch -d $(git branch --merged=master | grep -v master)"
-alias glcd="git branch -d $(git branch --merged=develop | grep -v develop)"
+alias gcld="git branch -d $(git branch --merged=develop | grep -v develop)"
