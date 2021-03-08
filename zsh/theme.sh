@@ -65,8 +65,6 @@ POWERLEVEL9K_FOLDER_ICON=''
 POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_STATUS_CROSS=true
 
-export PATH=$HOME/Library/Python/2.7/bin:/usr/local/share/python:/usr/local/opt/postgresql@9.6/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/code/lendinghome-monolith/bin:$HOME/code/lendinghome-monolith/toolbelt:$HOME/code/lendinghome-monolith/toolbelt/bin:$PATH
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
@@ -79,9 +77,6 @@ eval $(thefuck --alias)
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-alias rspec="bundle exec rspec"
-alias cucumber="bundle exec cucumber"
 
 setopt histignorespace
 
