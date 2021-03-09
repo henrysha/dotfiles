@@ -1,9 +1,9 @@
-if [ -d ~/.oh-my-zsh ]; then
-    echo "Removing Existing Oh-my-zsh installation."
-    rm -rf ~/.oh-my-zsh
-fi
-echo "Installing Oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# if [ -d ~/.oh-my-zsh ]; then
+#     echo "Removing Existing Oh-my-zsh installation."
+#     rm -rf ~/.oh-my-zsh
+# fi
+# echo "Installing Oh-my-zsh"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 if [ -d ~/.vim_runtime ]; then
     echo "Removing Existing Ultimate Vimrc"
@@ -28,8 +28,8 @@ rm -rf powerlinefonts
 
 echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
 brew tap homebrew/cask-fonts
-brew cask install font-meslo-nerd-font
-brew cask install font-ibm-plex
+brew install --cask font-meslo-nerd-font
+brew install --cask font-ibm-plex
 
 echo "Installing fzf"
 brew install fzf
@@ -50,10 +50,13 @@ echo "Installing custom zsh theme"
 echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 
+echo "installing zsh-z"
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+
 echo "Enabling oh-my-zsh plugins"
 sed -i '' '65i\
 export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
-sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh_reload)/' ~/.zshrc
+sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh_reload zsh-z)/' ~/.zshrc
 
 echo "Installing nvm"
 if [ -d ~/.nvm ]; then
@@ -61,6 +64,12 @@ if [ -d ~/.nvm ]; then
     mkdir ~/.nvm
 fi
 brew install nvm
+
+echo "Installing Node"
+nvm install latest
+
+echo "Installing yarn"
+npm install -g yarn
 
 echo "Installing Prettier"
 yarn global add prettier

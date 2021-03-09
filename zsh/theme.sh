@@ -88,6 +88,11 @@ LC_ALL=en_US.UTF-8
 
 export RUBY_CONFIGURE_OPTS="--disable-dtrace --with-openssl-dir=`brew --prefix openssl` --with-readline-dir=`brew --prefix readline` --with-libyaml-dir=`brew --prefix libyaml` --with-zlib-dir=`brew --prefix zlib`"
 
+export PATH="/usr/local/opt/ruby/bin:$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 alias gclm="git branch -d $(git branch --merged=master | grep -v master)"
 alias gcld="git branch -d $(git branch --merged=develop | grep -v develop)"
