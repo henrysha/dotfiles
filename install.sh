@@ -7,7 +7,7 @@ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 echo "Installing PowerLevel10k Zsh theme"
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+sudo git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 echo "Installing Powerline Fonts"
 # clone
@@ -30,11 +30,11 @@ echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 
 echo "installing zsh-z"
-git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+sudo git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 echo "Enabling oh-my-zsh plugins"
 sed -i '' '65i\
-export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"' ~/.zshrc
+export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"\n' ~/.zshrc
 sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh_reload zsh-z)/' ~/.zshrc
 
 echo "============================"

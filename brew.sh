@@ -9,6 +9,9 @@ brew install fzf
 echo "Installing fd"
 brew install fd
 
+echo "Installing thefuck"
+brew install thefuck
+
 echo "Installing ack"
 brew install ack
 git clone https://github.com/mileszs/ack.vim.git ~/.vim_runtime/my_plugins/ack.vim
