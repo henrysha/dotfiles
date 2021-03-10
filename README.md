@@ -31,7 +31,9 @@ Using the script to install setup will be convenient, but removes previous setti
 Back up files if necessary.
 ```zsh
 git clone --recursive https://github.com/henrysha/dotfiles.git ~/dotfiles
-sh ~/dotfiles/install.sh
+sudo ~/dotfiles/installohmyzsh.sh #if ohmyzsh is not installed
+sudo ~/dotfiles/install.sh
+~/dotfiles/brew.sh #homebrew cannot be run in sudo mode.
 ```
 ### Manual
 Clone current repo into `~/dotfiles`
