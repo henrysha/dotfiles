@@ -1,10 +1,3 @@
-# if [ -d ~/.oh-my-zsh ]; then
-#     echo "Removing Existing Oh-my-zsh installation."
-#     rm -rf ~/.oh-my-zsh
-# fi
-# echo "Installing Oh-my-zsh"
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 if [ -d ~/.vim_runtime ]; then
     echo "Removing Existing Ultimate Vimrc"
     rm -rf ~/.vim_runtime
