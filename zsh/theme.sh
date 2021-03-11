@@ -88,7 +88,7 @@ LC_ALL=en_US.UTF-8
 
 export RUBY_CONFIGURE_OPTS="--disable-dtrace --with-openssl-dir=`brew --prefix openssl` --with-readline-dir=`brew --prefix readline` --with-libyaml-dir=`brew --prefix libyaml` --with-zlib-dir=`brew --prefix zlib`"
 
-export PATH="/usr/local/opt/ruby/bin:$HOME/.jenv/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$HOME/.jenv/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:$HOME/ncc:$PATH"
 eval "$(jenv init -)"
 
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
