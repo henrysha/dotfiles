@@ -96,3 +96,6 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include 
 
 alias gclm="git branch -d $(git branch --merged=master | grep -v master)"
 alias gcld="git branch -d $(git branch --merged=develop | grep -v develop)"
+
+source < (kubectl completion zsh)
+
