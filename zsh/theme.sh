@@ -80,22 +80,16 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 setopt histignorespace
 
-export YVM_DIR=/usr/local/opt/yvm
-[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
 # Setting for the new UTF-8 terminal support in Lion
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
-export RUBY_CONFIGURE_OPTS="--disable-dtrace --with-openssl-dir=`brew --prefix openssl` --with-readline-dir=`brew --prefix readline` --with-libyaml-dir=`brew --prefix libyaml` --with-zlib-dir=`brew --prefix zlib`"
+alias gclb='git branch --merged | egrep -v "(^\*|main|master|dev)" | xargs git branch -d'
 
-export PATH="/usr/local/opt/ruby/bin:$HOME/.jenv/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/openjdk@8/bin:$HOME/ncc:$PATH"
-eval "$(jenv init -)"
 
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include -I/usr/local/opt/openjdk@8/include"
-
-alias gclm="git branch -d $(git branch --merged=master | grep -v master)"
-alias gcld="git branch -d $(git branch --merged=develop | grep -v develop)"
-
-source < (kubectl completion zsh)
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 

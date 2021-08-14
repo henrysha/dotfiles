@@ -1,7 +1,7 @@
 echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
 brew tap homebrew/cask-fonts
-brew install --cask font-meslo-nerd-font
-brew install --cask font-ibm-plex
+brew install font-meslo-lg-nerd-font
+brew install font-ibm-plex
 
 echo "Installing fzf"
 brew install fzf
@@ -24,7 +24,7 @@ fi
 brew install nvm
 
 echo "Installing Node"
-nvm install latest
+nvm install --lts
 
 echo "Installing yarn"
 npm install -g yarn
