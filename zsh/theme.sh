@@ -93,3 +93,15 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include -I/usr/local/opt/openjdk@8/include"
+
+alias gclm='git fetch -p && git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
+alias gclf='git branch -D $(git branch --list | grep feature)'
+
+alias yb="yarn && yarn build"
+
+source < (kubectl completion zsh)
+
+export AIRFLOW_HOME=~/airflow
+

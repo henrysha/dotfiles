@@ -31,3 +31,7 @@ npm install -g yarn
 
 echo "Installing Prettier"
 yarn global add prettier
+
+echo "setup fzf key binding"
+$(brew --prefix)/opt/fzf/install
+

@@ -7,8 +7,8 @@ map ∆ <M-j>
 map ˚ <M-k>
 
 map <leader>st :vertical :term<cr>
-map <leader>t :term<cr>
 
+map <leader>t :term<cr>
 " relative path (src/foo.txt)
 nnoremap <leader>cf :let @+=expand("%")<CR>
 
@@ -25,6 +25,8 @@ au FileType javascript set shiftwidth=2
 au FileType javascript set tabstop=2
 au FileType json set shiftwidth=2
 au FileType json set tabstop=2
+au FileType python set shiftwidth=2
+au FileType python set tabstop=2
 
 set foldlevelstart=20
 set foldmethod=indent

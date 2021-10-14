@@ -33,9 +33,8 @@ echo "installing zsh-z"
 sudo git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 echo "Enabling oh-my-zsh plugins"
-sed -i '' '65i\
-export FZF_BASE="/usr/local/Cellar/fzf/0.18.0"\n' ~/.zshrc
-sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh_reload zsh-z kubectl fzf)/' ~/.zshrc
+
+sed -i '' 's/plugins=(git)/plugins=(git thefuck zsh-z kubectl)/' ~/.zshrc
 
 echo "============================"
 echo "===== INSTALL COMPLETE ====="
