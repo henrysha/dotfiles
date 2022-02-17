@@ -30,7 +30,7 @@ echo "source ~/dotfiles/zsh/theme.sh" >> ~/.zshrc
 sed -i '' 's+robbyrussell+powerlevel10k/powerlevel10k+' ~/.zshrc
 
 echo "installing zsh-z"
-sudo git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 echo "Enabling oh-my-zsh plugins"
 
