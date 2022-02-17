@@ -32,15 +32,6 @@ if [ -d ~/.nvm ]; then
 fi
 brew install nvm
 
-echo "Installing Node"
-nvm install --lts
-
-echo "Installing yarn"
-npm install -g yarn
-
-echo "Installing Prettier"
-yarn global add prettier
-
 echo "setup fzf key binding"
 $(brew --prefix)/opt/fzf/install
 
