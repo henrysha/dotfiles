@@ -65,6 +65,7 @@ POWERLEVEL9K_FOLDER_ICON=''
 POWERLEVEL9K_STATUS_VERBOSE=true
 POWERLEVEL9K_STATUS_CROSS=true
 
+# nvm setting
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
@@ -86,22 +87,25 @@ LC_ALL=en_US.UTF-8
 
 alias gclb='git branch --merged | egrep -v "(^\*|main|master|dev)" | xargs git branch -d'
 
+# Android Path Settings
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include -I/usr/local/opt/openjdk@8/include"
+# Ruby / Java Settings
+# export LDFLAGS="-L/usr/local/opt/ruby/lib"
+# export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include -I/usr/local/opt/openjdk@8/include"
 
 alias gclm='git fetch -p && git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias gclf='git branch -D $(git branch --list | grep feature)'
 
 alias yb="yarn && yarn build"
 
-source < (kubectl completion zsh)
+# n2c setting
+# source < (kubectl completion zsh)
 
-export AIRFLOW_HOME=~/airflow
+# airflow setting
+# export AIRFLOW_HOME=~/airflow
 

@@ -1,3 +1,6 @@
+echo "Installing brew tab completion"
+brew install brew-cask-completion
+
 echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
 brew tap homebrew/cask-fonts
 brew install font-meslo-lg-nerd-font
@@ -35,3 +38,5 @@ yarn global add prettier
 echo "setup fzf key binding"
 $(brew --prefix)/opt/fzf/install
 
+echo "lastpass cli"
+brew install lastpass-cli
