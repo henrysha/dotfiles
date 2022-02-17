@@ -1,6 +1,9 @@
 echo "Installing brew tab completion"
 brew install brew-cask-completion
 
+echo "install gh cli"
+brew install gh
+
 echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
 brew tap homebrew/cask-fonts
 brew install font-meslo-lg-nerd-font
