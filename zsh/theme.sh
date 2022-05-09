@@ -113,3 +113,4 @@ alias yb="yarn && yarn build"
 # airflow setting
 # export AIRFLOW_HOME=~/airflow
 
+alias vr='volta run'
