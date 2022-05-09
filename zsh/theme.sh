@@ -114,3 +114,5 @@ alias yb="yarn && yarn build"
 # export AIRFLOW_HOME=~/airflow
 
 alias vr='volta run'
+alias vnpm='volta run npm'
+alias varn='volta run yarn'
