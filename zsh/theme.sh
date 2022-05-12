@@ -99,8 +99,8 @@ alias gclb='git branch --merged | egrep -v "(^\*|main|master|dev)" | xargs git b
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Ruby / Java Settings
-# export LDFLAGS="-L/usr/local/opt/ruby/lib"
-# export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include -I/usr/local/opt/openjdk@8/include"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include -I/usr/local/opt/openjdk@8/include"
 
 alias gclm='git fetch -p && git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias gclf='git branch -D $(git branch --list | grep feature)'
