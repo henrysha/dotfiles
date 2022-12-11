@@ -25,15 +25,18 @@ echo "Installing ack"
 brew install ack
 git clone https://github.com/mileszs/ack.vim.git ~/.vim_runtime/my_plugins/ack.vim
 
-echo "Installing nvm"
-if [ -d ~/.nvm ]; then
-    echo "Creating ~/.nvm directory"
-    mkdir ~/.nvm
-fi
-brew install nvm
+# echo "Installing nvm"
+# if [ -d ~/.nvm ]; then
+#     echo "Creating ~/.nvm directory"
+#     mkdir ~/.nvm
+# fi
+# brew install nvm
 
 echo "setup fzf key binding"
 $(brew --prefix)/opt/fzf/install
 
-echo "lastpass cli"
-brew install lastpass-cli
+# echo "lastpass cli"
+# brew install lastpass-cli
+
+echo "install volta"
+brew install volta
