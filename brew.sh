@@ -1,8 +1,8 @@
 echo "Installing brew tab completion"
 brew install brew-cask-completion
 
-echo "install vim"
-brew install vim
+# echo "install vim"
+# brew install vim
 
 echo "install gh cli"
 brew install gh
