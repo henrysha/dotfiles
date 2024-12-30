@@ -105,7 +105,7 @@ alias gclb='git branch --merged | egrep -v "(^\*|main|master|dev)" | xargs git b
 alias gclm='git fetch -p && git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias gclf='git branch -D $(git branch --list | grep feature)'
 
-alias yb="yarn && yarn build"
+alias yb="yarn build"
 
 # n2c setting
 # source < (kubectl completion zsh)
