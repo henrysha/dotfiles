@@ -8,9 +8,10 @@ echo "install gh cli"
 brew install gh
 
 echo "Installing Cask Fonts (Meslo Nerd font and IBM Plex)"
-brew tap homebrew/cask-fonts
-brew install font-meslo-lg-nerd-font
-brew install font-ibm-plex
+brew install --cask font-meslo-lg-nerd-fon
+brew install --cask font-ibm-plex
+brew install --cask font-ubuntu-mono
+brew install --cask font-d2coding
 
 echo "Installing fzf"
 brew install fzf
