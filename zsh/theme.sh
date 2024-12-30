@@ -70,9 +70,9 @@ POWERLEVEL9K_STATUS_CROSS=true
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # nvm setting if installed through brew
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 alias look="sudo find . -name"
 alias cls="clear"
@@ -105,7 +105,7 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include -I/usr/local/opt/openjdk/include 
 alias gclm='git fetch -p && git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias gclf='git branch -D $(git branch --list | grep feature)'
 
-alias yb="yarn && yarn build"
+alias yb="yarn build"
 
 # n2c setting
 # source < (kubectl completion zsh)
