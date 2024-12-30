@@ -4,7 +4,10 @@ then
   brew install tmux
 fi
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if ! [ -d ~/.tmux/plugins/tpm]
+then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
 
 if ! command -v jq 2>&1 >/dev/null
 then
