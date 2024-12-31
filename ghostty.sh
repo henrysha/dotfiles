@@ -22,6 +22,5 @@ then
   touch ~/.config/ghostty/config
 fi
 
-echo 'config-file = ~/dotfiles/ghostty/config' > ~/.config/ghostty/config
+echo 'config-file = ../../dotfiles/ghostty/config' > ~/.config/ghostty/config
 
-source ./tmux.sh
