@@ -23,3 +23,14 @@ fi
 
 echo "source-file ~/dotfiles/tmux/tmux.conf" > ~/.tmux.conf
 
+if ! [ -d ~/.config/tmux-powerline ]
+then
+  git clone git@github.com:henrysha/tmux-powerline.git ~/.config/tmux-powerline
+else
+  cd ~/.config/tmux-powerline
+  if ! git rev-parse --is-inside-work-tree 2>&1 >/dev/null
+  then
+    git clone git@github.com:henrysha/tmux-powerline.git .
+  fi
+fi
+
