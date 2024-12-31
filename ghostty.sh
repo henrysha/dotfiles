@@ -17,7 +17,7 @@ then
   mkdir ghostty
 fi
 
-if ! [ -e '~/.config/ghostty/config']
+if ! [ -e '~/.config/ghostty/config' ]
 then
   touch ~/.config/ghostty/config
 fi
