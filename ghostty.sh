@@ -18,6 +18,7 @@ then
 fi
 
 if ! [ -e '~/.config/ghostty/config']
+then
   touch ~/.config/ghostty/config
 fi
 
