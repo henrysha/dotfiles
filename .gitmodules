@@ -10,3 +10,6 @@
 [submodule "fonts/victor-mono"]
 	path = fonts/victor-mono
 	url = https://github.com/rubjo/victor-mono.git
+[submodule "tmux/tmux-powerline"]
+	path = tmux/tmux-powerline
+	url = git@github.com:henrysha/tmux-powerline.git
