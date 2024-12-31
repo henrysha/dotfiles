@@ -9,6 +9,3 @@ npm install -g pnpm
 
 echo "Installing Prettier"
 npm install -g prettier
-
-echo "Installing bitwarden-cli"
-npm install -g @bitwarden/cli
