@@ -39,5 +39,8 @@ $(brew --prefix)/opt/fzf/install
 # echo "lastpass cli"
 # brew install lastpass-cli
 
+echo "Installing Cmake"
+brew install cmake
+
 echo "install volta"
 brew install volta
