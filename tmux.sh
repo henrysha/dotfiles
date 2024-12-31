@@ -15,5 +15,11 @@ then
   brew install jq
 fi
 
+if ! command -v cmake 2>&1 >/dev/null
+then
+  echo "cmake not installed. Installing cmake"
+  brew install cmake
+fi
+
 echo "source-file ~/dotfiles/tmux/tmux.conf" > ~/.tmux.conf
 
