@@ -14,5 +14,8 @@ brew install lazygit
 echo "Installing ripgrep for the live grep of Telescope"
 brew install ripgrep
 
+echo "Installing Glow for Markdown preview"
+brew install glow
+
 echo "Adding the vim alias for neovim to zshrc"
 echo "alias vim=nvim" >> ~/.zshrc
